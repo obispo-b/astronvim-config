@@ -10,6 +10,12 @@ return {
   --   end,
   -- },
   {
+    "goolord/alpha-nvim",
+    opts = function(_, opts) -- override the options using lazy.nvim
+      opts.section.header.val = {} -- change the header section value
+    end,
+  },
+  {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
@@ -57,6 +63,10 @@ return {
   },
   {
     "sainnhe/gruvbox-material",
+    config = function()
+      vim.g.gruvbox_material_foreground = "original"
+      vim.g.gruvbox_material_background = "medium"
+    end,
     event = "BufEnter",
   },
   {

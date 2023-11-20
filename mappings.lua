@@ -25,9 +25,10 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<M-i>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-
+    ["<leader>q"] = { "<cmd>qa!<cr>", desc = "Quit all" },
     -- ZenMode
     ["<leader>z"] = { "<cmd>ZenMode<CR>", desc = "ZenMode" },
 
@@ -38,11 +39,11 @@ return {
     ["<leader>2"] = { "<cmd>lua require('harpoon.ui').nav_file(2)<CR>", desc = "Harpoon to 2" },
     ["<leader>3"] = { "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", desc = "Harpoon to 3" },
     ["<leader>4"] = { "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", desc = "Harpoon to 4" },
+    ["<Tab>"] = false,
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-    ["<leader>h"] = false,
-    ["<Tab>"] = false,
+    ["<M-i>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
   },
 }
