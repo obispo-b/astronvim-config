@@ -58,10 +58,6 @@ return {
     ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
   },
   {
-    "ellisonleao/gruvbox.nvim",
-    event = "BufEnter",
-  },
-  {
     "sainnhe/gruvbox-material",
     config = function()
       vim.g.gruvbox_material_foreground = "original"
