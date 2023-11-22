@@ -19,6 +19,8 @@ return {
       "ada",
       "haskell",
       "rust",
+      "dockerfile",
+      "toml",
     })
   end,
 }
